@@ -82,7 +82,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/ic_cama" />
+                android:background="@drawable/ic_cama_de_matrimonio" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                        android:layout_height="100dp"
                        android:layout_alignParentTop="true"
                        android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_restaurante" />
+                       android:background="@drawable/ic_restaurante_simbolo_circular_de_cubiertos_de_una_cuchara_y_un_tenedor_en_un_circulo" />
 
                    <TextView
                        android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
                        android:layout_height="100dp"
                        android:layout_alignParentTop="true"
                        android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_calendario" />
+                       android:background="@drawable/ic_calendario_con_un_reloj_herramientas_de_tiempo" />
 
                    <TextView
                        android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                        android:layout_height="100dp"
                        android:layout_alignParentTop="true"
                        android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_promocion" />
+                       android:background="@drawable/ic_alerta_simbolo_dibujado_a_mano" />
 
                    <TextView
                        android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
                        android:layout_height="100dp"
                        android:layout_alignParentTop="true"
                        android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_recepcionista" />
+                       android:background="@drawable/ic_cliente" />
 
                    <TextView
                        android:layout_width="wrap_content"
@@ -252,10 +252,10 @@
 
                    android:layout_alignParentEnd="true"
                    android:layout_alignParentRight="true"
+                   android:layout_margin="15dp"
 
                    android:layout_alignParentTop="true"
-                   android:layout_marginEnd="20dp"
-                   android:layout_marginRight="20dp"
+
                    android:layout_weight="0.5"
                    android:background="#99000000">
 
@@ -263,9 +263,10 @@
                        android:id="@+id/btngaleria"
                        android:layout_width="100dp"
                        android:layout_height="100dp"
+                       android:layout_alignEnd="@+id/textView7"
                        android:layout_alignParentTop="true"
-                       android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_imagen" />
+                       android:layout_alignRight="@+id/textView7"
+                       android:background="@drawable/ic_galeria" />
 
                    <TextView
                        android:id="@+id/textView7"
@@ -294,7 +295,7 @@
                        android:layout_height="100dp"
                        android:layout_alignParentTop="true"
                        android:layout_centerHorizontal="true"
-                       android:background="@drawable/ic_lugar" />
+                       android:background="@drawable/ic_herramienta_de_punto_de_aguja_para_mapas" />
 
                    <TextView
                        android:layout_width="wrap_content"

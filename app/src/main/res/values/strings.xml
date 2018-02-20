@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AppEden</string>
     <string name="ELeden">El Edén</string>
+    <string name="toolbarTitle">Información</string>
 </resources>
