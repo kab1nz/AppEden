@@ -17,7 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".InicioActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".Habitacion" />
+        <activity android:name=".suite" />
+        <activity android:name=".restaurante" />
+        <activity android:name=".eventos" />
+        <activity android:name=".oferta" />
+        <activity android:name=".reservaoferta" />
+        <activity android:name=".instalacionesservicios" />
+        <activity android:name=".lugar"></activity>
     </application>
 
 </manifest>
