@@ -17,9 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".InicioActivity" />
-        <activity android:name=".BaseActivity" />
         <activity android:name=".Habitacion" />
-        <activity android:name=".suite" />
         <activity android:name=".restaurante" />
         <activity android:name=".eventos" />
         <activity android:name=".oferta" />
