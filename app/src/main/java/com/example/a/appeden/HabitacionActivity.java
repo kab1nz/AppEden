@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class instalacionesservicios extends AppCompatActivity {
-    ImageView flecha3;
+public class HabitacionActivity extends AppCompatActivity {
+    ImageView flecha2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instalacionesservicios);
-        flecha3 = findViewById(R.id.flecha3);
-        flecha3.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_habitacion);
+        flecha2=findViewById(R.id.flecha2);
+        flecha2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();

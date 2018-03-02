@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnevento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,eventos.class);
+                Intent e = new Intent(MainActivity.this,EventosActivity.class);
                 startActivity(e);
             }
         });
@@ -48,35 +48,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnhabi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,Habitacion.class);
+                Intent e = new Intent(MainActivity.this,HabitacionActivity.class);
                 startActivity(e);
             }
         });
         btninstalaciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,instalacionesservicios.class);
+                Intent e = new Intent(MainActivity.this,InstalacionServiciosActivity.class);
                 startActivity(e);
             }
         });
         btnlugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,lugar.class);
+                Intent e = new Intent(MainActivity.this,LugarActivity.class);
                 startActivity(e);
             }
         });
         btnoferta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,oferta.class);
+                Intent e = new Intent(MainActivity.this,OfertaActivity.class);
                 startActivity(e);
             }
         });
         btnrestaurante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent e = new Intent(MainActivity.this,restaurante.class);
+                Intent e = new Intent(MainActivity.this,RestauranteActivity.class);
                 startActivity(e);
             }
         });
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.btnevento:
-                Intent e = new Intent(MainActivity.this,eventos.class);
+                Intent e = new Intent(MainActivity.this,EventosActivity.class);
                 startActivity(e);
                 break;
             case R.id.btngaleria:
@@ -103,24 +103,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(g);
                 break;
             case R.id.btnhabi:
-                Intent h = new Intent(MainActivity.this,Habitacion.class);
+                Intent h = new Intent(MainActivity.this,HabitacionActivity.class);
                 startActivity(h);
                 break;
             case R.id.btninstalaciones:
-                Intent info = new Intent(MainActivity.this,instalacionesservicios.class);
+                Intent info = new Intent(MainActivity.this,InstalacionServiciosActivity.class);
                 startActivity(info);
                 break;
             case R.id.btnlugar:
-                Intent lu = new Intent(MainActivity.this,lugar.class);
+                Intent lu = new Intent(MainActivity.this,LugarActivity.class);
                 startActivity(lu);
                 break;
             case R.id.btnoferta:
-                Intent ofe = new Intent(MainActivity.this,oferta.class);
+                Intent ofe = new Intent(MainActivity.this,OfertaActivity.class);
                 startActivity(ofe);
                 break;
 
             case R.id.btnrestaurante:
-                Intent res = new Intent(MainActivity.this,restaurante.class);
+                Intent res = new Intent(MainActivity.this,RestauranteActivity.class);
                 startActivity(res);
                 break;
         }

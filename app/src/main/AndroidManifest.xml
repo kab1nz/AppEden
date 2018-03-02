@@ -17,13 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".InicioActivity" />
-        <activity android:name=".Habitacion" />
-        <activity android:name=".restaurante" />
-        <activity android:name=".eventos" />
-        <activity android:name=".oferta" />
-        <activity android:name=".reservaoferta" />
-        <activity android:name=".instalacionesservicios" />
-        <activity android:name=".lugar"></activity>
+        <activity android:name=".HabitacionActivity" />
+        <activity android:name=".RestauranteActivity" />
+        <activity android:name=".EventosActivity" />
+        <activity android:name=".OfertaActivity" />
+        <activity android:name=".ReservaOfertaActivity" />
+        <activity android:name=".InstalacionServiciosActivity" />
+        <activity android:name=".LugarActivity"></activity>
     </application>
 
 </manifest>

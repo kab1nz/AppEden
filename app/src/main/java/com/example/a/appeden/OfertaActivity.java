@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class oferta extends AppCompatActivity {
+public class OfertaActivity extends AppCompatActivity {
     Button btnreserva;
     ImageView flecha5;
     @Override
@@ -25,7 +25,7 @@ public class oferta extends AppCompatActivity {
         btnreserva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(oferta.this,reservaoferta.class);
+                Intent i = new Intent(OfertaActivity.this,ReservaOfertaActivity.class);
                 startActivity(i);
             }
         });
