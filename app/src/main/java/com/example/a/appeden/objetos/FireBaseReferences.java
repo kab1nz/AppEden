@@ -1,0 +1,12 @@
+package com.example.a.appeden.objetos;
+
+/**
+ * Created by usuario on 07/03/2018.
+ */
+
+public class FireBaseReferences {
+    final public static String NOMBRE_REFERENCIAR = "nombre";
+    final public static String COCHES_REFERENS = "nombre";
+
+
+}

@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.a.appeden.basedatos.Usuarios;
+import com.example.a.appeden.objetos.FireBaseReferences;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -51,20 +52,21 @@ public class ReservaOfertaActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
     private void submitPost() {
-        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         final String nombre = etnombre.getText().toString();
         final String apellido = etape.getText().toString();
         final String email = etmail.getText().toString();
         final String fechaentrada = etfentrada.getText().toString();
         final String fechasalida = etfsalida.getText().toString();
-        final int nhabitaciones = Integer.parseInt(etnhabi.getText().toString());
-        String cont="1";
-        Usuarios usuario = new Usuarios(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones);
-        mDatabase.child("Usuarios").child(cont).setValue(usuario);
+        //final int nhabitaciones = Integer.parseInt(etnhabi.getText().toString());
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference(FireBaseReferences.NOMBRE_REFERENCIAR);
+        myRef.setValue(nombre);
 
     }
 }
