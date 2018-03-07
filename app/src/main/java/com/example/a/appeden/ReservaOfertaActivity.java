@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.example.a.appeden.basedatos.Usuarios;
 import com.example.a.appeden.objetos.FireBaseReferences;
+import com.example.a.appeden.objetos.Habitacion;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -63,9 +64,11 @@ public class ReservaOfertaActivity extends AppCompatActivity {
         final String email = etmail.getText().toString();
         final String fechaentrada = etfentrada.getText().toString();
         final String fechasalida = etfsalida.getText().toString();
-        //final int nhabitaciones = Integer.parseInt(etnhabi.getText().toString());
+        final int nhabitaciones = Integer.parseInt(etnhabi.getText().toString());
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference(FireBaseReferences.NOMBRE_REFERENCIAR);
+        //seguir por aqui ******************************
+        Habitacion habitacion = new Habitacion(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones);
+        DatabaseReference myRef = database.getReference(FireBaseReferences.RESERVA_REFERENCIAR);
         myRef.setValue(nombre);
 
     }

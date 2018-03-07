@@ -6,7 +6,7 @@ package com.example.a.appeden.objetos;
 
 public class FireBaseReferences {
     final public static String NOMBRE_REFERENCIAR = "nombre";
-    final public static String COCHES_REFERENS = "nombre";
+    final public static String RESERVA_REFERENCIAR = "reserva";
 
 
 }

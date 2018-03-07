@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "433222927356",
+    "firebase_url": "https://appeden-cec1f.firebaseio.com",
+    "project_id": "appeden-cec1f",
+    "storage_bucket": "appeden-cec1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433222927356:android:25681a6c00c7f879",
+        "android_client_info": {
+          "package_name": "com.example.a.appeden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433222927356-6dcuntbqttq64kmnla9jhne4r4r6nj0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a.appeden",
+            "certificate_hash": "f2211bc9641d2f53ccc6adbcf808bc00a9707fcb"
+          }
+        },
+        {
+          "client_id": "433222927356-fqoj4kcvoc1bnm88g8nj5thcne4ke5ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyyBxG89iOSr7i5jnuRkFUIOy0d_3r-8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433222927356-fqoj4kcvoc1bnm88g8nj5thcne4ke5ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
