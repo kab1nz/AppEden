@@ -23,7 +23,8 @@
         <activity android:name=".OfertaActivity" />
         <activity android:name=".ReservaOfertaActivity" />
         <activity android:name=".InstalacionServiciosActivity" />
-        <activity android:name=".LugarActivity"></activity>
+        <activity android:name=".LugarActivity" />
+        <activity android:name=".ReservaHabitacionActivity"></activity>
     </application>
 
 </manifest>

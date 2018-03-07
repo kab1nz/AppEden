@@ -11,17 +11,20 @@ public class Habitacion {
     String fechaentrada;
     String fechasalida;
     int nhabitaciones;
+    int precio;
+
 
     public Habitacion() {
     }
 
-    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones) {
+    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones,int precio) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.fechaentrada = fechaentrada;
         this.fechasalida = fechasalida;
         this.nhabitaciones = nhabitaciones;
+        this.precio = precio;
     }
 
     public String getNombre() {
