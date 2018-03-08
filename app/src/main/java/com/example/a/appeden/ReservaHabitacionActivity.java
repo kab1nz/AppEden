@@ -71,7 +71,8 @@ public class ReservaHabitacionActivity extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         //seguir por aqui ******************************
-        Habitacion habitacion = new Habitacion(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones,precio,tipo);
+        boolean reserva=false;
+        Habitacion habitacion = new Habitacion(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones,precio,tipo,reserva);
         DatabaseReference myRef = database.getReference(FireBaseReferences.NOMBRE_REFERENCIAR);
         myRef.child(FireBaseReferences.RESERVA).push().setValue(habitacion);
     }

@@ -5,6 +5,7 @@ package com.example.a.appeden.objetos;
  */
 
 public class Habitacion {
+    boolean reserva=false;
     String nombre;
     String apellido;
     String email;
@@ -18,7 +19,7 @@ public class Habitacion {
     public Habitacion() {
     }
 
-    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones, int precio, String tipo) {
+    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones, int precio, String tipo,boolean reserva) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -27,6 +28,7 @@ public class Habitacion {
         this.nhabitaciones = nhabitaciones;
         this.precio = precio;
         this.tipo = tipo;
+        this.reserva=reserva;
     }
 
     public String getNombre() {
@@ -87,6 +89,10 @@ public class Habitacion {
 
     public String getTipo() {
         return tipo;
+    }
+
+    public boolean isReserva() {
+        return reserva;
     }
 
     public void setTipo(String tipo) {
