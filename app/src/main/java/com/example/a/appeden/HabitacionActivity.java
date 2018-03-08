@@ -15,7 +15,7 @@ public class HabitacionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_habitacion);
         flecha2=findViewById(R.id.flecha2);
-        btnhab = findViewById(R.id.btnreservahab);
+        btnhab =  findViewById(R.id.btnreservahab);
         btnhab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

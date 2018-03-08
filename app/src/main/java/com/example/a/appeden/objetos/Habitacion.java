@@ -12,12 +12,13 @@ public class Habitacion {
     String fechasalida;
     int nhabitaciones;
     int precio;
+    String tipo;
 
 
     public Habitacion() {
     }
 
-    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones,int precio) {
+    public Habitacion(String nombre, String apellido, String email, String fechaentrada, String fechasalida, int nhabitaciones, int precio, String tipo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -25,6 +26,7 @@ public class Habitacion {
         this.fechasalida = fechasalida;
         this.nhabitaciones = nhabitaciones;
         this.precio = precio;
+        this.tipo = tipo;
     }
 
     public String getNombre() {
@@ -73,5 +75,34 @@ public class Habitacion {
 
     public void setNhabitaciones(int nhabitaciones) {
         this.nhabitaciones = nhabitaciones;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    @Override
+    public String toString() {
+        return "Prediccion{" +
+            "Nombre='" + nombre + '\'' +
+            ", Apellido='" + apellido + '\'' +
+            ", Email=" + email +
+            ", FechaEntrada=" + fechaentrada +
+            ", FechaSalida=" + fechasalida +
+            ", Precio=" + precio +
+            ", NºHabitaciones=" + nhabitaciones +
+            ", Tipo=" + tipo +
+            '}';
     }
 }

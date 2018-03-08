@@ -29,7 +29,7 @@ public class ReservaOfertaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_reservaoferta);
         flecha6=findViewById(R.id.flecha9);
         etnombre=findViewById(R.id.etnombre);
-        etape=findViewById(R.id.etapellioferta);
+        etape=findViewById(R.id.etapellio);
         ettel=findViewById(R.id.ettele);
         etmail=findViewById(R.id.etemail);
         etfentrada=findViewById(R.id.etfentrada);
@@ -63,9 +63,10 @@ public class ReservaOfertaActivity extends AppCompatActivity {
         final String fechasalida = etfsalida.getText().toString();
         final int nhabitaciones = Integer.valueOf(etnhabi.getText().toString());
         final int precio = nhabitaciones*50;
+        String tipo="estandar";
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         //seguir por aqui ******************************
-        Habitacion habitacion = new Habitacion(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones,precio);
+        Habitacion habitacion = new Habitacion(nombre,apellido,email,fechaentrada,fechasalida,nhabitaciones,precio,tipo);
         DatabaseReference myRef = database.getReference(FireBaseReferences.NOMBRE_REFERENCIAR);
         myRef.child(FireBaseReferences.RESERVA_REFERENCIAR).push().setValue(habitacion);
 

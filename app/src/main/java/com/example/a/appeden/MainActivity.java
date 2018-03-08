@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button btnInicio,btnevento,btngeleria,btnhabi,btninstalaciones,btnlugar,btnoferta,btnrestaurante;
+    ImageView btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnlugar=findViewById(R.id.btnlugar);
         btnoferta=findViewById(R.id.btnoferta);
         btnrestaurante=findViewById(R.id.btnrestaurante);
+        btnlogin=findViewById(R.id.btnlogin);
 
-
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent e = new Intent(MainActivity.this,Admin.class);
+            startActivity(e);
+            }
+        });
         btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
